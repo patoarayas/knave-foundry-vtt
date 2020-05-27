@@ -87,7 +87,7 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "url": "https://gitlab.com/Aidymouse/knave-foundryvtt",
-  "manifest": "https://gitlab.com/Aidymouse/knave-foundryvtt/system.json",
+  "manifest": "https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/system.json",
   "download": "https://gitlab.com/Aidymouse/knave-foundryvtt/-/archive/release-1.0.0/knave-foundryvtt-release-1.0.0.zip",
   "license": "LICENSE.txt"
 }
