@@ -1,0 +1,93 @@
+{
+  "name": "knave",
+  "title": "Knave",
+  "description": "Knave for Foundry VTT with built in Item Compendiums and Automatic Character Generation!",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.5.5",
+  "compatibleCoreVersion": "0.5.5",
+  "templateVersion": 2,
+  "author": "Aidan",
+  "esmodules": ["module/knave.js"],
+  "styles": ["css/knave.css"],
+  "scripts": [],
+  "packs": [
+    {
+      "name": "armor",
+      "label": "Armor",
+      "system": "knave",
+      "path": "./packs/armor.db",
+      "entity": "Item"
+    },
+    {
+      "name": "bestiary",
+      "label": "Bestiary",
+      "system": "knave",
+      "path": "./packs/bestiary.db",
+      "entity": "Actor"
+    },
+    {
+      "name": "character-generation-tables",
+      "label": "Character Generation Tables",
+      "system": "knave",
+      "path": "./packs/character-generation-tables.db",
+      "entity": "RollTable"
+    },
+    {
+      "name": "dungeoneering-gear",
+      "label": "Dungeoneering Gear",
+      "system": "knave",
+      "path": "./packs/dungeoneering-gear.db",
+      "entity": "Item"
+    },
+    {
+      "name": "general-gear-1",
+      "label": "General Gear 1",
+      "system": "knave",
+      "path": "./packs/general-gear-1.db",
+      "entity": "Item"
+    },
+    {
+      "name": "general-gear-2",
+      "label": "General Gear 2",
+      "system": "knave",
+      "path": "./packs/general-gear-2.db",
+      "entity": "Item"
+    },
+    {
+      "name": "rules-of-knave",
+      "label": "Rules of Knave",
+      "system": "knave",
+      "path": "./packs/rules-of-knave.db",
+      "entity": "Item"
+    },
+    {
+      "name": "tools-and-gear",
+      "label": "Tools and Gear",
+      "system": "knave",
+      "path": "./packs/tools-and-gear.db",
+      "entity": "Item"
+    },
+    {
+      "name": "Weapons and Armor",
+      "label": "Weapons and Armor",
+      "system": "knave",
+      "path": "./packs/weapons-and-armor.db",
+      "entity": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}
