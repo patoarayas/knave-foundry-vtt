@@ -174,8 +174,6 @@ export class knaveActorSheet extends ActorSheet {
           ids.push(id);
         });
 
-        console.log(ids);
-
         act.deleteOwnedItem(ids);
 
       }
@@ -186,7 +184,7 @@ export class knaveActorSheet extends ActorSheet {
       // Find the pack with all the rollable tables in it
       const tablePack = game.packs.get("knave.character-generation-tables");
       const packIndex = await tablePack.getIndex();
-      
+
       // Starting Armor
       console.log("Character Generating: Generating Armor");
       
@@ -204,7 +202,6 @@ export class knaveActorSheet extends ActorSheet {
       
       // If the result is armor, put it in the actors inventory and change their defense!
       if (armorDraw.collection) {
-        console.log(armorDraw);
         act.importItemFromCollection(armorDraw.collection, armorDraw.resultId);
 
         let newArmorDefense;
@@ -227,13 +224,13 @@ export class knaveActorSheet extends ActorSheet {
       // Starting Helmet / Shield
       console.log("Character Generating: Generating Helmet / Shield");
       
-      const hsTableId = packIndex.find(e => e.name == "Helmets and Shields")._id;
+      const hsTableId = await packIndex.find(e => e.name == "Helmets and Shields")._id;
       const hsTable = await tablePack.getEntity(hsTableId);
       
       const hsDraw = await hsTable.roll().results[0];
 
       if (hsDraw.collection) {
-        act.importItemFromCollection(hsDraw.collection, hsDraw.resultId);
+        await act.importItemFromCollection(hsDraw.collection, hsDraw.resultId);
         
 
         let newArmor = act.data.data.attributes.armor.defense + 1
@@ -252,7 +249,7 @@ export class knaveActorSheet extends ActorSheet {
           const shieldId = hsPackIndex.find(e => e.name == "Shield")._id;
     
           await act.importItemFromCollection("knave.armor", helmId);
-          act.importItemFromCollection("knave.armor", shieldId);
+          await act.importItemFromCollection("knave.armor", shieldId);
           
           // Increment Defense By Two
           let newArmor = act.data.data.attributes.armor.defense + 2
@@ -268,18 +265,20 @@ export class knaveActorSheet extends ActorSheet {
       const dunGearId = packIndex.find(e => e.name == "Dungeoneering Gear")._id;
       const dunGearTable = await tablePack.getEntity(dunGearId);
       
+      
       const dunGearDraw = await dunGearTable.roll().results[0];
-      act.importItemFromCollection(dunGearDraw.collection, dunGearDraw.resultId);
+      await act.importItemFromCollection(dunGearDraw.collection, dunGearDraw.resultId);
       
       const dunGearDraw2 = await dunGearTable.roll().results[0];
-      act.importItemFromCollection(dunGearDraw2.collection, dunGearDraw2.resultId);
+      await act.importItemFromCollection(dunGearDraw2.collection, dunGearDraw2.resultId);
       
       
       console.log("Character Generating: General Gear 1");
       
       const gg1Id = packIndex.find(e => e.name == "General Gear 1")._id;
       const gg1Table = await tablePack.getEntity(gg1Id);
-
+      console.log(gg1Id, gg1Table);
+      
       const gg1Draw = await gg1Table.roll().results[0];
       act.importItemFromCollection(gg1Draw.collection, gg1Draw.resultId);
 

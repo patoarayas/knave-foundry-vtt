@@ -26,19 +26,20 @@
       "entity": "Actor"
     },
     {
-      "name": "character-generation-tables",
-      "label": "Character Generation Tables",
-      "system": "knave",
-      "path": "./packs/character-generation-tables.db",
-      "entity": "RollTable"
-    },
-    {
       "name": "dungeoneering-gear",
       "label": "Dungeoneering Gear",
       "system": "knave",
       "path": "./packs/dungeoneering-gear.db",
       "entity": "Item"
     },
+    {
+      "name": "character-generation-tables",
+      "label": "Character Generation Tables",
+      "system": "knave",
+      "path": "./packs/character-generation-tables.db",
+      "entity": "RollTable"
+    },
+    
     {
       "name": "general-gear-1",
       "label": "General Gear 1",
