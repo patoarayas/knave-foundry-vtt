@@ -9,7 +9,7 @@ Quickly and easily generate new characters on the fly at the click of a button.
 ## Monster Cards
 Easily manage and create monsters with simple card based design.
 
-![Monster Card](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Monster Card")
+![Monster Card](https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/img/previews/gnomecard.png "Monster Card")
 
 
 ## Thanks
