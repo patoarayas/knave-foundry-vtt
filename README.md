@@ -12,6 +12,12 @@ Quickly and easily generate new characters on the fly at the click of a button.
 Easily manage and create monsters with simple card based design.
 
 ![Monster Card](https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/img/previews/gnomecard.png "Monster Card")
+![Monster Attacks](https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/img/previews/attacks.png "Monster Attacks displayed in chat")
+
+## In Built Bestiary
+A selection of AD&D's most iconic monsters built into the system itself.
+
+![Bestiary](https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/img/previews/bestiary.png "Bestiary")
 
 ## Thanks
 Special thanks to Anathema, nikolaj-a, asocalips and solarbear on the Foundry VTT Discord for helping me through the creation of this system. A HUGE thanks to Rabid Baboon for giving me the inpsiration to start!
