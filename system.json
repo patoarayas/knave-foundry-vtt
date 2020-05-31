@@ -2,7 +2,7 @@
   "name": "knave",
   "title": "Knave",
   "description": "Knave for Foundry VTT with built in Item Compendiums and Automatic Character Generation!",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "minimumCoreVersion": "0.5.5",
   "compatibleCoreVersion": "0.6.0",
   "templateVersion": 2,
@@ -88,6 +88,6 @@
   "primaryTokenAttribute": "health",
   "url": "https://gitlab.com/Aidymouse/knave-foundryvtt",
   "manifest": "https://gitlab.com/Aidymouse/knave-foundryvtt/system.json",
-  "download": "https://gitlab.com/Aidymouse/knave-foundryvtt/-/archive/release-1.0.2/knave-release-1.0.2.zip",
+  "download": "https://gitlab.com/Aidymouse/knave-foundryvtt/-/archive/release-1.0.0/knave-release-1.0.0.zip",
   "license": "LICENSE.txt"
 }
