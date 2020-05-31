@@ -185,6 +185,15 @@ export class knaveActorSheet extends ActorSheet {
       const tablePack = game.packs.get("knave.character-generation-tables");
       const packIndex = await tablePack.getIndex();
 
+      // All characters start with 2 days of travel rations
+      const toolGearPack = game.packs.get("knave.tools-and-gear");
+      const toolGearIndex = await toolGearPack.getIndex();
+
+      const rationId = toolGearIndex.find(e => e.name == "Travel Rations (1 day)")._id;
+      
+      act.importItemFromCollection("knave.tools-and-gear", rationId);
+
+
       // Starting Armor
       console.log("Character Generating: Generating Armor");
       
