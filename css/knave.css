@@ -23,7 +23,7 @@
   .window-app .window-content {
     width: 100%;
     height: 100%;
-    
+
     background-color: white;
     background-image: none;
 
@@ -74,7 +74,7 @@
   .left-col {
     height: 504px;
     width: 100%;
-    
+
     text-align: center;
   }
 
@@ -137,7 +137,7 @@
 
   .left-col .left-row.armor-row {
     margin-bottom: 10px;
-    
+
   }
 
   /* Hp */
@@ -249,7 +249,7 @@
     overflow: hidden;
     transition-duration: 0.3s;
   }
-  
+
   .portrait-cell .settings-panel:hover {
     width: 150px;
     height: 100px;
@@ -313,7 +313,7 @@
   .notes-cell .editor-content {
     width: 100%;
     height: 100%;
-    
+
     padding-left: 5px;
     padding-right: 5px;
 
@@ -360,7 +360,7 @@
   /* Remaining Slots Indicator */
   .right-col .slots-remaining {
     width: 100%;
-    
+
   margin-top: 3px;
 
     display: flex;
@@ -545,7 +545,7 @@
     height: 100%;
     max-height: 100%;
     overflow-y: auto;
-    
+
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
@@ -647,7 +647,7 @@
   /* Name Input */
   .monster-grid .name {
     grid-area: name;
-    
+
   }
 
   .monster-grid .name input {
@@ -687,6 +687,10 @@
     font-weight: bold;
   }
 
+  .monster-grid .attributes .monster-attribute span {
+    width: max-content;
+  }
+
   .monster-grid .attributes .monster-attribute input {
     text-align: center;
     width: 60%;
@@ -720,13 +724,13 @@
     display: none;
   }
 
-  
+
   .monster-grid .settings .setting-selector {
     position: absolute;
     right: 0;
     top: 0;
   }
-  
+
   .monster-grid .settings:hover {
     position: absolute;
     width: 100%;
@@ -738,7 +742,7 @@
     transition-duration: 0.3s;
     background-color: rgba(0, 0, 0, 0.9);
   }
-  
+
   .monster-grid .settings:hover p,
   .monster-grid .settings:hover input {
     display: block;
@@ -878,7 +882,7 @@
     height: 100%;
     overflow: hidden;
   }
-  
+
   .monster-grid .notes .editor-content {
     width: 100%;
     height: 100%;
