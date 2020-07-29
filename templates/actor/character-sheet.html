@@ -2,7 +2,7 @@
 
   {{!-- Sheet Header --}}
   <section class="left-col">
-    
+
     <div class="left-row header-row">
       <p>{{localize "mainSheet.leftColumn.defenseLabel"}}</p>
       <p>{{localize "mainSheet.leftColumn.abilityLabel"}}</p>
@@ -14,8 +14,8 @@
         <div class="ability-centering-box">
           <input class="ability-defense" name="data.abilities.{{key}}.defense" value="{{ability.defense}}" data-dtype="Number"/>
         </div>
-        <span class="ability-label">{{toUpperCase key}}</span>
-        
+        <span class="ability-label">{{localize key}}</span>
+
         <div class="ability-centering-box">
           <span class="ability-bonus rollable" data-roll="d20+@abilities.{{key}}.bonus" data-label="{{ability.label}}">{{numberFormat ability.bonus decimals=0 sign=true}}</span>
         </div>
@@ -34,7 +34,7 @@
           data-dtype="Number" />
       </div>
       <span class="ability-label">{{localize "mainSheet.leftColumn.armorLabel"}}</span>
-    
+
       <div class="ability-centering-box">
         <span class="ability-bonus rollable" data-roll="d20+@attributes.armor.bonus"
           data-label="{{data.attributes.armor.label}}">{{numberFormat data.attributes.armor.bonus decimals=0 sign=true}}</span>
@@ -46,14 +46,14 @@
       <p></p>
       <p>{{localize "mainSheet.leftColumn.HPCurrentLabel"}}</p>
     </div>
-    
+
     <div class="left-row HP-row">
       <div class="ability-centering-box">
         <input class="ability-defense" name="data.health.max" value="{{data.health.max}}"
           data-dtype="Number" />
       </div>
       <span class="ability-label">{{localize "mainSheet.leftColumn.HPLabel"}}</span>
-    
+
       <div class="ability-centering-box">
         <input class="ability-defense" name="data.health.value" value="{{data.health.value}}"
           data-dtype="Number" />
@@ -76,7 +76,7 @@
         src="systems/knave/img/dice/d4.svg">
 
     </div>
-    
+
 
   </section>
 
@@ -84,7 +84,7 @@
 
   {{!-- Notes and Names --}}
   <div class="middle-col">
-      
+
     <div class="name-exp-lvl-bar">
 
       <div class="input-bar name">
@@ -96,25 +96,25 @@
         <label for="data.attributes.exp.value">{{localize "mainSheet.midColumn.XPLabel"}}</label>
         <input type="text" name="data.attributes.exp.value" value="{{data.attributes.exp.value}}" data-dtype="String" placeholder="Name..."/>
       </div>
-      
+
       <div class="input-bar lvl">
         <label for="data.attributes.level.value">{{localize "mainSheet.midColumn.levelLabel"}}</label>
         <input type="text" name="data.attributes.level.value" value="{{data.attributes.level.value}}" data-dtype="String" placeholder="Name..."/>
       </div>
-      
+
     </div>
-    
+
     <div class="portrait-cell">
       <label>{{localize "mainSheet.midColumn.notesBoxLabel"}}</label>
       <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
-    
+
       <div class="settings-panel">
         <i class="fas fa-cog settings-hoverover"></i>
         <div class="generate-character centerer">{{localize "mainSheet.midColumn.generateCharacterButtonLabel"}}</div>
       </div>
 
     </div>
-    
+
     <div class="notes-cell">
       {{editor content=data.notes target="data.notes" editable=editable owner=owner button=true}}
     </div>
@@ -130,7 +130,7 @@
     <div class="slots-remaining">
       <label>{{localize "mainSheet.rightColumn.slotsRemainingLabel"}}</label>
       <span class="itemslot-indicator">{{data.attributes.slotsremaining}}</span>
-      <span>{{localize "of"}}</span>
+      <span>{{localize "mainSheet.of"}}</span>
       <span class="itemslot-indicator">{{data.abilities.con.defense}}</span>
     </div>
 
@@ -149,7 +149,7 @@
           <div class="item-centerer">
             <img src="{{item.img}}" title="{{item.name}}" width="20" height="20" />
           </div>
-          
+
           <div class="item-centerer">
             {{item.name}}
           </div>
@@ -157,7 +157,7 @@
           <div class="item-full-centerer">
             {{item.data.slotstaken}}
           </div>
-          
+
           <div class="item-controls">
             <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
           </div>
@@ -169,4 +169,3 @@
   </section>
 
 </form>
-

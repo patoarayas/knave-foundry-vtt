@@ -41,7 +41,7 @@
                 <input type="text" name="data.attributes.morale" value="{{data.attributes.morale}}">
             </div>
 
-            
+
             <div class="centerer settings">
                 <i class="fas fa-cog setting-selector"></i>
 
@@ -59,9 +59,9 @@
                 </div>
 
                 <div class="centerer">
-                    <span class="ability-label">{{toUpperCase key}}</span>
+                    <span class="ability-label">{{localize key}}</span>
                 </div>
-                
+
                 <div class="centerer rollable" data-roll="d20+@abilities.{{key}}.bonus" data-label="{{ability.label}}">
                     <span class="ability-bonus">{{numberFormat ability.bonus decimals=0 sign=true}}</span>
                 </div>

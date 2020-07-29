@@ -1,4 +1,11 @@
 {
+    "str": "STR",
+    "dex": "DEX",
+    "con": "CON",
+    "int": "INT",
+    "wis": "WIS",
+    "cha": "CHA",
+
     "mainSheet": {
         "of": "of",
 
