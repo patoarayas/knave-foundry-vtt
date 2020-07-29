@@ -10,10 +10,10 @@
         "of": "of",
 
         "leftColumn": {
+
             "defenseLabel": "DEFENSE",
             "abilityLabel": "ABILITY",
             "bonusLabel": "BONUS",
-
             "armorLabel": "ARMOR",
 
             "HPMaxLabel": "MAX",
