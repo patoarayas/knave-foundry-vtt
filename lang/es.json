@@ -41,6 +41,7 @@
     },
 
     "monsterSheet": {
+        "namePlaceHolder": "Nombre ...",
         "hitDiceLabel": "Dado de golpe",
         "currentHPLabel": "HP Actual",
         "maxHPLabel": "HP Máximo",
@@ -53,6 +54,16 @@
         "attackHeadingName": "Ataque",
         "attackHeadingBonus": "Bonus",
         "attackHeadingDamage": "Fórmula de daño"
+    },
+
+    "itemSheet": {
+        "slotsUsed": "Espacios usados",
+        "quantity": "Cantidad",
+        "quality": "Calidad",
+        "description": "Descripción",
+        "attributes": "Atributos",
+        "name": "Nombre",
+        "spellLevel": "Nivel de hechizo"
     },
 
     "rollLabels": {
