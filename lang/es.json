@@ -42,7 +42,7 @@
 
     "monsterSheet": {
         "namePlaceHolder": "Nombre ...",
-        "hitDiceLabel": "Dado de golpe",
+        "hitDiceLabel": "Dados de golpe",
         "currentHPLabel": "HP Actual",
         "maxHPLabel": "HP Máximo",
         "multiplierLabel": "Multiplicador",
@@ -57,7 +57,7 @@
     },
 
     "itemSheet": {
-        "slotsUsed": "Espacios usados",
+        "slotsUsed": "Espacios",
         "quantity": "Cantidad",
         "quality": "Calidad",
         "description": "Descripción",
