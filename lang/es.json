@@ -42,14 +42,14 @@
 
     "monsterSheet": {
         "namePlaceHolder": "Nombre ...",
-        "hitDiceLabel": "Dado de golpe",
+        "hitDiceLabel": "Dados de golpe",
         "currentHPLabel": "HP Actual",
         "maxHPLabel": "HP Máximo",
         "multiplierLabel": "Multiplicador",
         "armorClassLabel": "Armadura",
         "moraleLabel": "Moral",
 
-        "abilityScoreHitDiceOptionLabel": "Basar puntos de habilidad en el dado de golpe",
+        "abilityScoreHitDiceOptionLabel": "Basar puntos de habilidad en los dados de golpe",
 
         "attackHeadingName": "Ataque",
         "attackHeadingBonus": "Bonus",
@@ -57,7 +57,7 @@
     },
 
     "itemSheet": {
-        "slotsUsed": "Espacios usados",
+        "slotsUsed": "Espacios",
         "quantity": "Cantidad",
         "quality": "Calidad",
         "description": "Descripción",
