@@ -2,7 +2,7 @@
   "name": "knave",
   "title": "Knave",
   "description": "Knave for Foundry VTT with built in Item Compendiums and Automatic Character Generation!",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "minimumCoreVersion": "0.5.5",
   "compatibleCoreVersion": "0.6.5",
   "templateVersion": 2,
