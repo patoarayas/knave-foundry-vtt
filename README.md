@@ -1,26 +1,39 @@
-# Knave
-This is a system for Foundry Virtual Tabletop (https://foundryvtt.com/) that emulates Ben Milton's fabulous classless old-school RPG Knave.
+# Description / Descripción
+This is a localization fork of the Knave system for Foundry VTT developed by Aidymouse. The original repo can be found [here.](https://gitlab.com/Aidymouse/knave-foundryvtt). This forks adds full Spanish translation for the system. 
 
-It features an automatic character generator, an assortment of well known AD&D Monsters and a full set of icons for the games tools and gear.
+Este es un fork del sistema desarrollado por Aidymouse para el sistema Knave. incorpora una traducción completa al Español. El repositorio original puede ser encontrado [aquí](https://gitlab.com/Aidymouse/knave-foundryvtt)
 
-### Installation
-To install the Knave system, copy and paste this link [https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/system.json] into the Manifest URL section of the Install System dialog in the Foundry client.
+##Installation / Instalación
 
-## Automatic Character Generator
-Quickly and easily generate new characters on the fly at the click of a button.
+To install the system you have to go into the Game Sytems tab in the Configuration and Setup view, then clik on install system. In the box at the bottom enter the following URL:
 
-![Character Generation](https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/img/previews/chargen.gif "Character Generation")
+https://raw.githubusercontent.com/patoarayas/knave-foundry-vtt/master/system.json
 
-## Monster Cards
-Easily manage and create monsters with simple card based design.
+Para instalar el sistema dentro de la vista Configuration and Setup de Foundry ir a la pestaña Game Systems y hacer click en botón Install System. En la caja de texto de la parte inferior ingrsar la siguiente URL:
 
-![Monster Card](https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/img/previews/gnomecard.png "Monster Card")
-![Monster Attacks](https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/img/previews/attacks.png "Monster Attacks displayed in chat")
+https://raw.githubusercontent.com/patoarayas/knave-foundry-vtt/master/system.json
 
-## In Built Bestiary
-A selection of AD&D's most iconic monsters built into the system itself.
+## Translated compendia / Compendios traducidos
 
-![Bestiary](https://gitlab.com/Aidymouse/knave-foundryvtt/-/raw/master/img/previews/bestiary.png "Bestiary")
+If you want to also have the compendium entries translated into Spanish you have to also install the  module [knave-babele-es](https://github.com/patoarayas/knave-babele-es). 
 
-## Thanks
-Special thanks to Anathema, nikolaj-a, asocalips and solarbear on the Foundry VTT Discord for helping me through the creation of this system. A HUGE thanks to Rabid Baboon for giving me the inpsiration to start!
+**Important:** In order to use this module you must have installed Babele first. You can install it using the Install Module button inside Foundry and searching for it.
+
+Once you have Babele installed:
+
+Inside Foundry, go to the Add-on Modules tab in the Configuration and Setup menu. Then click the Install Module button and enter the following URL:
+
+https://raw.githubusercontent.com/patoarayas/knave-babele-es/master/module.json
+
+Click Install and wait for installation to complete.
+
+Para traducir las entradas de los compendios tienes que instalar el módulo [knave-babele-es](https://github.com/patoarayas/knave-babele-es). 
+
+**Importante:** Para instalar este módulo primero debes tener instalado Babele. Puedes instalarlo directamente dentro de la sección Add-on Modules dentro de Foundry.
+
+Una vez que ya tengas instalado Babele. Dentro de Foundry en la pestaña Add-on Modules haz click en Install Module e ingresa en el campo inferior la siguiente URL:
+
+https://raw.githubusercontent.com/patoarayas/knave-babele-es/master/module.json
+
+Aprieta "Install" y espera a que esta se complete.
+
