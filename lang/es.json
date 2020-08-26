@@ -68,11 +68,11 @@
 
     "rollLabels": {
         "monsterAttack": "to attack!",
-        "d20": "a d20",
+        "d20": "un d20",
         "2d6": "2d6",
-        "d10": "a d10",
-        "d8": "a d8",
-        "d6": "a d6",
-        "d4": "a d4"
+        "d10": "un d10",
+        "d8": "un d8",
+        "d6": "un d6",
+        "d4": "un d4"
     }
 }

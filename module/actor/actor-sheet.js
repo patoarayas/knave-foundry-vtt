@@ -186,7 +186,8 @@ export class knaveActorSheet extends ActorSheet {
       const toolGearPack = game.packs.get("knave.tools-and-gear");
       const toolGearIndex = await toolGearPack.getIndex();
       
-      const rationId = toolGearIndex.find(e => e.name == "Travel Rations (1 day)")._id;
+      //const rationId = toolGearIndex.find(e => e.name == "Travel Rations (1 day)")._id;
+      const rationId = "DU5ipgWXhrW4jwwQ";
       
       act.importItemFromCollection("knave.tools-and-gear", rationId);
       
@@ -315,7 +316,7 @@ export class knaveActorSheet extends ActorSheet {
     // Check for encumberance!!
     let makeItemSmall = false;
     if (actor.data.attributes.slotsremaining <= 0) {
-      ui.notifications.warn("Not enough item slots!");
+      ui.notifications.warn("¡No tienes suficiente espacio!");
       return false;
     } else if (actor.data.attributes.slotsremaining < 1) {
       makeItemSmall = true;
@@ -357,7 +358,7 @@ export class knaveActorSheet extends ActorSheet {
 
     if (dataset.roll) {
       let roll = new Roll(dataset.roll, this.actor.data.data);
-      let label = dataset.label ? `Rolling ${dataset.label}` : '';
+      let label = dataset.label ? `Tirando ${dataset.label}` : '';
       roll.roll().toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
         flavor: label
